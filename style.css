@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #1e1e1e;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-top: 200px;
+  color: rgb(216, 216, 216);
+}
+
+.emailInput,
+.countryInput,
+.zipInput,
+.passInput,
+.confirmPassword-Input {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(197, 197, 197);
+  color: #1e1e1e;
+}
+
+.submitBtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 110px;
+    border-radius: 10px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
+}
