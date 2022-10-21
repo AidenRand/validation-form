@@ -12,32 +12,28 @@ body {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  width: 400px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
   font-size: 2rem;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 200px;
   color: rgb(216, 216, 216);
+  gap: 20px;
 }
 
-.emailInput,
-.countryInput,
-.zipInput,
-.passInput,
-.confirmPassword-Input {
+.input {
   display: flex;
-  justify-content: center;
   width: 400px;
   height: 50px;
   font-size: 1.5rem;
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  border: none;
   outline: none;
   background-color: rgb(197, 197, 197);
   color: #1e1e1e;
+  border: 0px solid rgb(0, 0, 0);
 }
 
 .submitBtn {
@@ -50,8 +46,28 @@ body {
     border: none;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
     font-size: 1.5rem;
     background-color: rgb(211, 211, 211);
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.submitBtn:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+.inputDiv {
+  display: flex;
+  justify-content: center;
+}
+
+#password {
+  text-decoration: none;
+}
+
+/* Input errors */
+
+.errorText {
+  font-size: 1.3rem;
+  color: brown;
 }

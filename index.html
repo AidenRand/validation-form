@@ -1,32 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
     <title>Document</title>
-</head>
-<body>
-    <form>
-        <div class="form">
-            <label for="email">Email:</label>
-            <input name="email" type="email" class="emailInput" required>
-
-            <label for="country">Country:</label>
-            <input name="country" type="text" class="countryInput" required>
-
-            <label for="zipcode">Zip Code:</label>
-            <input name="zipcode" type="text" class="zipInput" required>
-
-            <label for="password">Password:</label>
-            <input name="password" type="password" class="passInput" required>
-
-            <label for="confirmPassword">Confirm Password:</label>
-            <input name="confirmPassword" type="password" class="confirmPassword-Input" required>
-            <button class="submitBtn">Submit</button>
+  </head>
+  <body>
+    <form id="formContainer">
+      <div class="form">
+        <div class="inputDiv">
+          <input
+            name="email"
+            type="text"
+            class="input"
+            id="email"
+            placeholder="Email"
+          />
         </div>
+        <div class="errorText" id="emailError"></div>
+
+        <div class="inputDiv">
+          <input
+            name="country"
+            type="text"
+            class="input"
+            id="country"
+            placeholder="Country"
+          />
+        </div>
+        <div class="errorText" id="countryError"></div>
+
+        <div class="inputDiv">
+          <input
+            name="zipcode"
+            type="text"
+            class="input"
+            id="zipcode"
+            placeholder="ZipCode"
+          />
+        </div>
+        <div class="errorText" id="zipcodeError"></div>
+
+        <div class="inputDiv">
+          <input
+            name="password"
+            type="text"
+            class="input"
+            id="password"
+            placeholder="Password"
+            min="8"
+          />
+        </div>
+        <div class="errorText" id="passwordError"></div>
+
+        <div class="inputDiv">
+          <input
+            name="confirmPassword"
+            type="text"
+            class="input"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+            min="8"
+          />
+        </div>
+        <div class="errorText" id="confirmPasswordError"></div>
+
+        <button type="submit" class="submitBtn">Submit</button>
+      </div>
     </form>
-</body>
-<script src="index.js"></script>
+  </body>
 </html>
